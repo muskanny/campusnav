@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Load the API key from .env
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
